@@ -4,15 +4,25 @@ serverName = 'localhost'
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
+print ('Connection established')
 message = 'Client X: Alice'
-for i in range(5):
-    Thread(target=clienthandler).start()
+clientSocket.send(message.encode())
+clientSocket.close()
 
 
-def clienthandler():
-    connectionSocket, addr = clientSocket.accept()
+
+
+
+    #def clienthandler():
+    #connectionSocket, addr = clientSocket.accept()
     #print (addr, "Client X: Alice")
-    while 1:
-        message = connectionSocket.recv(1024)
-        if not message:
-            break
+    #while 1:
+    #   message = connectionSocket.recv(1024)
+    #   if not message:
+#       break
+
+#for i in range(5):
+#   Thread(target=clienthandler).start()
+
+
+

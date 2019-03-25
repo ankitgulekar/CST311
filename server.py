@@ -1,22 +1,39 @@
 from socket import *
-from threading import Thread
-serverPort = 12000
-serverSocket = socket(AF_INET, SOCK_STREAM)
-serverSocket.bind(('', serverPort))
-serverSocket.listen(1)
-print('The server is ready to receive')
-#while True:
-def clientmanager():
-    connectionSocket, addr = serverSocket.accept()
-    while True:
-        sentence = connectionSocket.recv ( 1024 ).decode ()
-    if(sentence == "Client X: Alice"):
-        Sentence = "X: Alice received before Y: Bob"
-    else:
-        Sentence = "Y: Bob received before X: Alice"
-    connectionSocket.send(Sentence.encode())
+import thread
 
-for i in range(2):
-    Thread(target=clientmanager).start()
+BUFF = 1024
+HOST = '127.0.0.1'
+PORT = 12000
 
-serverSocket.close()
+clienty = 0
+clientx = 0
+
+
+def response(key):
+    return 'Server response: ' + key
+
+
+def handler(clientsock, addr):
+    while 1:
+        data = clientsock.recv(BUFF)
+        if not data: break
+        print repr(addr) + ' recv:' + repr(data)
+        clientsock.send(response(data))
+        print repr(addr) + ' sent:' + repr(response(data))
+        if "close" == data.rstrip(): break  # type 'close' on client console to close connection from the server side
+
+    clientsock.close()
+    print addr, "- closed connection"  # log on console
+
+
+if __name__ == '__main__':
+    ADDR = (HOST, PORT)
+    serversock = socket(AF_INET, SOCK_STREAM)
+    serversock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+    serversock.bind(ADDR)
+    serversock.listen(5)
+    while 1:
+        print 'waiting for connection... listening on port', PORT
+        clientsock, addr = serversock.accept()
+        print '...connected from:', addr
+        thread.start_new_thread(handler, (clientsock, addr))

@@ -4,9 +4,11 @@ serverName = 'localhost'
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
-print ('Connection established')
+print ('Client X: Alice')
 message = 'Client X: Alice'
 clientSocket.send(message.encode())
+reply = clientSocket.recv(1024)
+print('From Server:',reply.decode())
 clientSocket.close()
 
 

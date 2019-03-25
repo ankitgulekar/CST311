@@ -11,7 +11,7 @@ for i in range(5):
 
 def clientHandler():
     connectionSocket, addr = clientSocket.accept()
-    print (addr, "Client X")
+    print (addr, "Client X: Alice")
     while 1:
         message = connectionSocket.recv(1024)
         if not message:

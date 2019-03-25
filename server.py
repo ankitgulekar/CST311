@@ -14,3 +14,4 @@ while True:
     connectionSocket.send(Sentence.encode())
     connectionSocket.close()
 
+

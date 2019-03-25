@@ -1,6 +1,6 @@
 from socket import *
 from threading import Thread
-serverName = localhost
+serverName = 'localhost'
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
@@ -16,8 +16,3 @@ def clienthandler():
         message = connectionSocket.recv(1024)
         if not message:
             break
-
-
-clientSocket.close()
-
-

@@ -1,23 +1,17 @@
 from socket import *
 from threading import Thread
 
-serverName = localhost
-serverPort = 12000
-clientSocket = socket ( AF_INET, SOCK_STREAM )
-clientSocket.connect ( (serverName, serverPort) )
-message = 'Client Y: Bob'
-
-for i in range ( 2 ):
-    Thread ( target=clienthandler ).start ()
+serversocket = socket(AF_INET, SOCK_STREAM)
+serversocket.bind('localhost', 80)
+serversocket.listen(5)
 
 
-def clienthandler():
-    connectionSocket, addr = clientSocket.accept ()
-    #print ( addr, "Client Y: Bob" )
-    while 1:
-        message = connectionSocket.recv ( 1024 )
-        if not message:
-            break
+while True:
+    # accept connections from outside
+    (clientsocket, address) = serversocket.accept()
+    # now do something with the clientsocket
+    # in this case, we'll pretend this is a threaded server
+    ct = client_thread(clientsocket)
+    ct.run()
 
-
-clientSocket.close ()
+clientSocket.close()

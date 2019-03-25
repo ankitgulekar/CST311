@@ -8,9 +8,9 @@ while True:
     connectionSocket, addr = serverSocket.accept()
     sentence = connectionSocket.recv(1024).decode()
     if(sentence == "Client X: Alice"):
-        Sentence = ("X: Alice received before Y: Bob")
+        Sentence = "X: Alice received before Y: Bob"
     else:
-        Sentence = (Y: Bob received before X: Alice")
+        Sentence = "Y: Bob received before X: Alice"
     connectionSocket.send(Sentence.encode())
     connectionSocket.close()
 

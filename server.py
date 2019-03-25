@@ -2,11 +2,8 @@ from socket import *
 import thread
 
 BUFF = 1024
-HOST = '127.0.0.1'
-PORT = 12000
-
-clienty = 0
-clientx = 0
+HOST = '127.0.0.1'  # must be input parameter @TODO
+PORT = 12000  # must be input parameter @TODO
 
 
 def response(key):

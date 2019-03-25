@@ -16,6 +16,6 @@ def clientHandler():
         message = connectionSocket.recv(1024)
         if not message:
             break
-        print ("Y: Bob received before X: Alice”)
+        
 
  clientSocket.close()

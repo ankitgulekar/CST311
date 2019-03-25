@@ -1,21 +1,23 @@
 from socket import *
 from threading import Thread
+
 serverName = localhost
 serverPort = 12000
-clientSocket = socket(AF_INET, SOCK_STREAM)
-clientSocket.connect((serverName,serverPort))
+clientSocket = socket ( AF_INET, SOCK_STREAM )
+clientSocket.connect ( (serverName, serverPort) )
+message = 'Client Y: Bob'
 
-for i in range(2):
-  Thread(target=clientHandler).start()
+for i in range ( 2 ):
+    Thread ( target=clienthandler ).start ()
 
 
-def clientHandler():
-    connectionSocket, addr = clientSocket.accept()
-    print (addr, "Client Y: Bob")
+def clienthandler():
+    connectionSocket, addr = clientSocket.accept ()
+    #print ( addr, "Client Y: Bob" )
     while 1:
-        message = connectionSocket.recv(1024)
+        message = connectionSocket.recv ( 1024 )
         if not message:
             break
-        
 
- clientSocket.close()
+
+clientSocket.close ()

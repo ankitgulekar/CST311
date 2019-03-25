@@ -1,17 +1,11 @@
 from socket import *
-from threading import Thread
-
-serversocket = socket(AF_INET, SOCK_STREAM)
-serversocket.bind('localhost', 80)
-serversocket.listen(5)
-
-
-    #while True:
-    # accept connections from outside
-    # (clientsocket, address) = serversocket.accept()
-    # now do something with the clientsocket
-    # in this case, we'll pretend this is a threaded server
-    #ct = client_thread(clientsocket)
-# ct.run()
-
+serverName = 'localhost'
+serverPort = 12000
+clientSocket = socket(AF_INET, SOCK_STREAM)
+clientSocket.connect((serverName,serverPort))
+print ('Client Y: Bob')
+message = 'Client Y: Bob'
+clientSocket.send(message.encode())
+reply = clientSocket.recv(1024)
+print('From Server:',reply.decode())
 clientSocket.close()

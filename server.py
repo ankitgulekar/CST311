@@ -1,4 +1,5 @@
 from socket import *
+from operator import xor
 import thread
 import time
 
@@ -21,14 +22,14 @@ def handler(clientsock, addr):
     global Response_message
     while 1:
 
-        data = clientsock.recv(BUFF)
+        data = clientsock.recv ( BUFF )
         if not data:
             break
 
         if not ClientX and not ClientY:
             Response_message = data
 
-        if data == 'Client X: Alice':
+        if data == 'X: Alice received before Y: Bob':
             ClientX = True
         else:
             ClientY = True
@@ -36,23 +37,26 @@ def handler(clientsock, addr):
         while not ClientX or not ClientY:
             continue
 
-        clientsock.send(response(Response_message))
-        print addr, "- closed connection"  # log on console
+        clientsock.send ( response ( Response_message ) )
 
-
-        
-        clientsock.close()
-        break
+    if xor ( ClientX, ClientY ):
+        ClientX = False
+        ClientY = False
+        Response_message = " "
+    ClientX = False
+    clientsock.close ()
 
 
 if __name__ == '__main__':
     ADDR = (HOST, PORT)
-    serversock = socket(AF_INET, SOCK_STREAM)
-    serversock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
-    serversock.bind(ADDR)
-    serversock.listen(5)
+    serversock = socket ( AF_INET, SOCK_STREAM )
+    serversock.setsockopt ( SOL_SOCKET, SO_REUSEADDR, 1 )
+    serversock.bind ( ADDR )
+    serversock.listen ( 5 )
     while 1:
-        clientsock, addr = serversock.accept()
-        print '...connected from:', addr
-        print 'listening on port', PORT
-        thread.start_new_thread(handler, (clientsock, addr))
+        clientsock, addr = serversock.accept ()
+        print
+        '...connected from:', addr
+        print
+        'listening on port', PORT
+        thread.start_new_thread ( handler, (clientsock, addr) )

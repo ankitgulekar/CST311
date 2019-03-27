@@ -1,8 +1,9 @@
 from socket import *
+
 serverName = 'localhost'
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
-clientSocket.connect((serverName,serverPort))
+clientSocket.connect((serverName, serverPort))
 print ('Client Y: Bob')
 message = input('Enter the name')
 clientSocket.send(message.encode())

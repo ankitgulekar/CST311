@@ -7,16 +7,22 @@ HOST = '127.0.0.1'  # must be input parameter @TODO
 PORT = 12000  # must be input parameter @TODO
 
 
+
+
 ClientX = False
 ClientY = False
 Response_message = " "
 
 def response(key):
-    return 'Server response: ' + key
+    return key
 
 
 def handler(clientsock, addr):
+   global ClientX
+   global ClientY
+   global Response_message
     while 1:
+
         data = clientsock.recv(BUFF)
         if not data:
             break
@@ -28,16 +34,21 @@ def handler(clientsock, addr):
             ClientY = True
 
         while not ClientX or not ClientY:
+            
 
 
         print repr(addr) + ' recv:' + repr(data)
         #time.sleep(60)
         clientsock.send(response(data))
         print repr(addr) + ' sent:' + repr(response(data))
-        if "close" == data.rstrip(): break  # type 'close' on client console to close connection from the server side
 
-    clientsock.close()
-    print addr, "- closed connection"  # log on console
+                clientsock.send(response(message))
+                print addr, "- closed connection"  # log on console
+                clientsock.close()
+                break
+
+
+
 
 
 if __name__ == '__main__':
@@ -47,7 +58,8 @@ if __name__ == '__main__':
     serversock.bind(ADDR)
     serversock.listen(5)
     while 1:
-        print 'waiting for connection... listening on port', PORT
         clientsock, addr = serversock.accept()
         print '...connected from:', addr
+        print 'listening on port', PORT
         thread.start_new_thread(handler, (clientsock, addr))
+        print thread.start_new_thread

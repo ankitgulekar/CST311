@@ -10,11 +10,3 @@ clientSocket.send(ClientX.encode())
 reply = clientSocket.recv(1024)
 print('From Server:', reply.decode())
 clientSocket.close()
-
-
-
-
-
-
-
-

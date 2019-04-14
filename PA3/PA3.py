@@ -22,10 +22,12 @@ def myNetwork():
     # net.addLink (switch, r1 )
 
     info('*** Add hosts\n')
+    # The default route is the route that will connect the host to the route
     h1 = net.addHost('h1', cls=Host, ip='192.168.1.100/24', defaultRoute='via 192.168.1.1')
     h2 = net.addHost('h2', cls=Host, ip='172.16.0.100/12', defaultRoute='via 172.16.0.1')
 
     info('*** Add links\n')
+    # We needed to add a link name (r0-ethX) and what subnet the link was on
     net.addLink(h1, r1, intfName2='r0-eth1', params2={'ip': '192.168.1.1/24'})
     net.addLink(h2, r1, intfName2='r0-eth2', params2={'ip': '172.16.0.1/12'})
 

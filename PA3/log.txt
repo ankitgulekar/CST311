@@ -1,0 +1,217 @@
+commit 2c820c93a7a3d70d2a6c78487eec15d237fd9ccc
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Sun Apr 14 13:24:03 2019 -0700
+
+    added comments
+
+commit 94f3bcc57eaf31f6dd59d0d45873dd77a5602ccc
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Sun Apr 14 13:22:47 2019 -0700
+
+    working h1 ping h2
+
+commit 568de68bfd3dae7c630cd6c252c8333ffd383137
+Author: ankitgulekar <agulekar@csumb.edu>
+Date:   Thu Apr 4 13:17:48 2019 -0700
+
+    WIP
+
+commit c878a88796f1024ea038d5891306c9829b684d09
+Author: ankitgulekar <agulekar@csumb.edu>
+Date:   Thu Apr 4 12:16:20 2019 -0700
+
+    working w/ linuxrouter
+
+commit ea37c40a26f8a496c9b9318d7107a155539340a9
+Author: ankitgulekar <agulekar@csumb.edu>
+Date:   Thu Apr 4 11:59:44 2019 -0700
+
+    WIP
+
+commit ca6d1700cc116e3fd01f0a806177b3806cedaa3d
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Wed Apr 3 19:51:11 2019 -0700
+
+    removed duplicate files
+
+commit 8725c0dbc7f81eb39e34ad2c500e60361720530c
+Author: None <None>
+Date:   Wed Apr 3 19:50:10 2019 -0700
+
+    meaningful
+
+commit 001d5eb536df471420905bfe670e6a1a591c3a5e
+Author: None <None>
+Date:   Wed Apr 3 19:45:51 2019 -0700
+
+    PA3
+
+commit de4b6a7d32c7f5fccdafb8d774e58938693948e7
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Tue Mar 26 19:10:32 2019 -0700
+
+    final revision
+
+commit e9fad7c7ac65363342ffc8a480bade333b08ed1b
+Author: ankitgulekar <agulekar@csumb.edu>
+Date:   Tue Mar 26 18:30:20 2019 -0700
+
+    Final changes
+
+commit 83c275abb8e4b7d9f3a2471f8b1a973a0859c6ee
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Tue Mar 26 17:59:11 2019 -0700
+
+    working version
+
+commit 9c7d22c54cdd9ca6c337824143166530014ab394
+Merge: 4f57ecf 6c50ef4
+Author: Ankit Gulekar <ankitgulekar@Ankits-MacBook-Pro.local>
+Date:   Tue Mar 26 17:43:13 2019 -0700
+
+    changes
+
+commit 4f57ecf4ffaef83b36a849293477a676b125be13
+Author: Ankit Gulekar <ankitgulekar@Ankits-MacBook-Pro.local>
+Date:   Tue Mar 26 17:31:58 2019 -0700
+
+    changes
+
+commit 6c50ef4ca30083251ef499b226571214c80b9018
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Sun Mar 24 22:54:58 2019 -0700
+
+    working version
+
+commit 9ddbbe894dbe2b7e251767ade249647c84070520
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Sun Mar 24 20:32:12 2019 -0700
+
+    fixed error
+
+commit 9580d421b04ab1847f857d77e7a9fc853f0ee171
+Merge: ffc7ed7 22fccd8
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Sun Mar 24 20:31:13 2019 -0700
+
+    Merge branch 'master' of https://github.com/ankitgulekar/CST311
+
+commit ffc7ed7b81ee852b3c382ce02c841620038c7ec3
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Sun Mar 24 20:31:04 2019 -0700
+
+    fixed error
+
+commit 22fccd8212ee1fad6ee3a4d6454c102cc0917836
+Author: Ankit Gulekar <ankitgulekar@Ankits-MacBook-Pro.local>
+Date:   Sun Mar 24 20:15:08 2019 -0700
+
+    fix errors
+
+commit 62e14f21227499f590047f848ec5db0a5240f0e1
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Sun Mar 24 20:01:15 2019 -0700
+
+    added threading
+
+commit c83b3d786d1b46317ef3dbae6d8a5e5e150cf316
+Author: Ankit Gulekar <ankitgulekar@Ankits-MacBook-Pro.local>
+Date:   Sun Mar 24 19:07:31 2019 -0700
+
+    changes
+
+commit 36eec36e19af71d7ccd0dde5cfbd1a24a34553be
+Author: Ankit Gulekar <ankitgulekar@Ankits-MacBook-Pro.local>
+Date:   Sun Mar 24 18:47:35 2019 -0700
+
+    more changes
+
+commit 8b22d193c8a96c2c74cbf5201c610ac5ac8905a1
+Author: Ankit Gulekar <ankitgulekar@Ankits-MacBook-Pro.local>
+Date:   Sun Mar 24 18:43:12 2019 -0700
+
+    more changes
+
+commit 7afbe3d25b8411a316aae4bc41ea2b4071fdb741
+Author: Ankit Gulekar <ankitgulekar@Ankits-MacBook-Pro.local>
+Date:   Sun Mar 24 18:33:30 2019 -0700
+
+    fixed the errors
+
+commit 6c8c3870ef5c8546f23292bb3e1189db8225b7b9
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Sun Mar 24 18:07:17 2019 -0700
+
+    readded files
+
+commit ba9d211da74bbe6b5c610715c221482eded68ad9
+Author: Erick Shaffer <erickshaffer@Ericks-MacBook-Pro.local>
+Date:   Sun Mar 24 17:51:35 2019 -0700
+
+    switched to tcp
+
+commit af215cb30a23a1af4d641ee9aafdde3841bb6565
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:37:00 2019 -0700
+
+    Update server.py
+
+commit 11355b41eab67597606fe0f55f4eff30d36eecd5
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:34:52 2019 -0700
+
+    Update ClientY.py
+
+commit 7286fc9117be170713cfa6ab20c8b4d59eeb6436
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:32:57 2019 -0700
+
+    Update ClientX.py
+
+commit cb0d84e3477cd21087b4427881d66a732156d088
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:24:06 2019 -0700
+
+    Update and rename c.py to server.py
+
+commit b723bfdcfe9f9f9b09bd603941d502beb5493c9d
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:17:05 2019 -0700
+
+    Update and rename serverY.py to ClientY.py
+
+commit 6b38b365d44b95dbcf29c35f29b2d1b6191a8a08
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:16:24 2019 -0700
+
+    Rename serverX.py to ClientX.py
+
+commit 2bda03eaad34bf28db4bf0f4f69b0e067d0093e7
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:15:59 2019 -0700
+
+    Update serverX.py
+
+commit cadf6330f042e55ec4870797cb978c1db0c21d53
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:12:29 2019 -0700
+
+    Update serverY.py
+
+commit a36ea8a7c3d013b473cead69cb4c0e13b5c16427
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:11:58 2019 -0700
+
+    Update serverX.py
+
+commit a84ee2a65f67076217acf8dc18469187f12f51a6
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 17:05:17 2019 -0700
+
+    Add files via upload
+
+commit a6877ba1671e3bf5b5f61e254697ac3b66f71ae4
+Author: ankitgulekar <42821708+ankitgulekar@users.noreply.github.com>
+Date:   Sun Mar 24 16:00:35 2019 -0700
+
+    Add files via upload
